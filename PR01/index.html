@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylesheet.css">
+  <title>Form</title>
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <div class="center-card">
+    <div class="register-card">
+      <h1>Register</h1>
+      <form action="">
+        <div class="form-group">
+          <label for="">Email</label>
+          <input
+            type="text"
+            class=""
+            placeholder="Email"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Password</label>
+          <input
+            type="password"
+            class=""
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-group">
+          <span class="genderspan">
+            <span class="gender">
+              <label for="male" class="gender-label">Muško</label>
+              <input id="male" type="radio" name="gender" class="genderselect" value="Muško">
+            </span>
+            <span class="gender">
+              <label for="female" class="gender-label">Žensko</label>
+              <input id="female" type="radio" name="gender" class="genderselect" value="Žensko">
+            </span>
+            <span class="gender">
+              <label for="other" class="gender-label">Drugo</label>
+              <input id="other" type="radio" name="gender" class="genderselect" value="Drugo">
+            </span>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
