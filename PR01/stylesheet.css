@@ -47,10 +47,9 @@ label{
     display: block;
     padding: 4px;
     box-shadow: 0px 0px 8px rgb(156, 156, 156);;
-    border-left: 8px solid rgb(101, 78, 165);
     color: rgb(7, 11, 22);
     border-radius: 10px;
-    width: 450px;
+    width: 432px;
     padding-bottom: 10px;
     padding-top: 5px;
 }
