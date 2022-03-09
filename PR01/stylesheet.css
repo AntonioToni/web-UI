@@ -87,17 +87,6 @@ label{
     width: 93%;
 }
 
-.genderselect{
-    cursor: pointer;
-    height: 36px;
-    width: 14px;
-    margin: 0;
-    position: absolute;
-    right: 10px;
-    top: 0;
-    font-size: 12px;
-}
-
 .genderselect:focus{
     outline: none;
 }
