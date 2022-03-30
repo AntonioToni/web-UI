@@ -1,5 +1,3 @@
-//1
-
 function core(){
     let sum = 0;
     let x;
