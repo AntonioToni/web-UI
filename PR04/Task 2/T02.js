@@ -3,4 +3,4 @@ function res(name, points, totalpoints) {
     console.log("Iz kolegija", name, "ostvarili ste",x.toFixed(2),"%");
 }
 
-res("MUP/PWKS",25,35);
+res(("MUP/PWKS"),(25),(35));
