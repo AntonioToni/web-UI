@@ -1,7 +1,7 @@
 let date = new Date();
-let WeekdayNum = date.getDay();
 
-function getWeekday(date){
+function getWeekday(date1){
+    let date = date1.getDay()
     switch(date){
         case 0: 
             return 'Nedjelja';
@@ -26,4 +26,4 @@ function getWeekday(date){
             break;
 }}
 
-console.log(getWeekday(WeekdayNum))
+console.log(getWeekday(date))
