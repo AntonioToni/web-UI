@@ -1,29 +1,33 @@
 let date = new Date();
 let WeekdayNum = date.getDay();
 
-function getWeekday(date){
-    switch(date){
+function getDay(input) {
+    const date = new Date(input);
+    switch(date.getDay()){
         case 0: 
-            return 'Nedjelja';
+            console.log('Nedjelja');
             break;
         case 1:
-            return 'Ponedjeljak';
+            console.log('Ponedjeljak');
             break;
         case 2:
-            return 'Utorak';
+            console.log('Utorak');
             break;
         case 3:
-            return 'Srijeda';
+            console.log('Srijeda');
             break;
         case 4:
-            return 'Četvrtak';
+            console.log('Četvrtak');
             break;
         case 5:
-            return 'Petak';
+            console.log('Petak');
             break;
         case 6:
-            return 'Subota';
+            console.log('Subota');
             break;
-}}
+    }
+}
 
-console.log(getWeekday(WeekdayNum))
+getDay("11/07/2006");
+
+getDay("01/01/2022");
