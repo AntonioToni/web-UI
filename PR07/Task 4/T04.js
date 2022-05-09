@@ -1,4 +1,4 @@
-function specialReverse(string, char) {
+function reverseSpecific(string, char) {
     let word = string.split(" ");
     let newstr = "";
     for (let i = 0; i < word.length; i++) {
@@ -19,8 +19,8 @@ function specialReverse(string, char) {
     console.log(newstr);
 }
 
-specialReverse("word searches are super fun", "s");
+reverseSpecific("word searches are super fun", "s");
 
-specialReverse("first man to walk on the moon", "m");
+reverseSpecific("first man to walk on the moon", "m");
 
-specialReverse("peter piper picked pickled peppers", "p");
+reverseSpecific("peter piper picked pickled peppers", "p");
