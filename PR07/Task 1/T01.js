@@ -1,6 +1,3 @@
-let date = new Date();
-let WeekdayNum = date.getDay();
-
 function getDay(input) {
     const date = new Date(input);
     switch(date.getDay()){
