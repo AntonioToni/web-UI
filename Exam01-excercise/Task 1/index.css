@@ -1,5 +1,6 @@
 .box{
     max-width: 600px;
+    min-width: 300px;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
@@ -20,6 +21,7 @@ input{
     border-radius: 5px;
     border: solid 1px rgba(122, 122, 122, 0.671);
     padding: 5px;
+    width: 100%;
 }
 .registerButton{
     width: 100%;
