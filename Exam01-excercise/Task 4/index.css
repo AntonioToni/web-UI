@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.box-center{
+    flex: 1 0 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+.background{
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-color: hsl(225, 100%, 94%);
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 20px;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: hidden;
+    padding-bottom: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.desc{
+    margin-top: 0;
+    color: rgba(0, 0, 0, 0.555);
+    font-size: 16px;
+}
+
+.cardPad{
+    padding: 0 50px 0 50px;
+}
+
+.selectedplan{
+    display: flex;
+    flex-direction: row;
+    margin-top: 36px;
+    margin-bottom: 26px;
+    background-color: rgba(0, 0, 0, 0.020);
+    border-radius: 10px;
+    margin: 20px 30px 20px 30px;
+    padding: 14px 10px 14px 10px;
+}
+
+.selectedplan_desc{
+    flex: 1;
+}
+
+.changeplan{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.paybtn{
+    width: 84%;
+    height: 46px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border: 0;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 16px 20px rgba(0, 0, 0, 0.151);
+    font-weight: 600;
+    transition: 100ms;
+    font-size: 15px;
+}
+
+.paybtn:hover{
+    cursor: pointer;
+    background-color: hsl(245, 70%, 49%);
+}
+
+.ico{
+    display: flex;
+    align-items: center;
+}
+
+.cancelbutton{
+    border: 0;
+    background-color: inherit;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+}
+
+.cancelbutton:hover{
+    cursor: pointer;
+}
+
+.plandesc{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width:376px){
+    .card{
+        width: 340px;
+    }
+    .background{
+        background-image: url(./images/pattern-background-mobile.svg);
+    }
+}
