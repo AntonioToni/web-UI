@@ -1,0 +1,2 @@
+document.getElementById("textt").innerText = document.getElementById("textt").innerText.replaceAll("?", '🤔');
+document.getElementById("textt").innerText = document.getElementById("textt").innerText.replaceAll("!", '😲');
