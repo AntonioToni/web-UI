@@ -1,12 +1,14 @@
-function req1() {
-    fetch('https://jsonplaceholder.typicode.com/posts/1')
+function req() {
+    fetch('https://jsonplaceholder.typicode.com/posts/')
         .then(response => response.json())
         .then(json => {
-            const title = json.title;
-            const body = json.body;
-            document.getElementById("printTitle").innerHTML = title;
-            document.getElementById("printBody").innerHTML = body;
+            for (i in json){
+                let title = json[i].title;
+                let body = json[i].body;
+                document.write("<h2>"+title+"</h2>");
+                document.write("<p>"+body+"</p>")
+            }
     });
 }
   
-req1();
+req();
