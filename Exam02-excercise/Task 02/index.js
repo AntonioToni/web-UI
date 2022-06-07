@@ -1,22 +1,11 @@
 function generateCombinations(str) {
-    var lenStr = str.length;
-    var result = [];
-    var indexCurrent = 0;
-
-    while(indexCurrent < lenStr){
-        var char = str.charAt(indexCurrent);
-        var x;
-        var arrTemp = [char];
-
-        for(x in result) {
-            arrTemp.push(""+result[x]+char);
+    let combinations = [];
+    for (let i = 0 ;i < str.length; i++){
+        for (let j = i + 1; j< str.length + 1; j++){
+            combinations.push(str.slice(i , j));
         }
-        result = result.concat(arrTemp);
-
-        indexCurrent++;
     }
-
-    return result;
+   return combinations;
 }
 
 console.log(generateCombinations("dog"))
