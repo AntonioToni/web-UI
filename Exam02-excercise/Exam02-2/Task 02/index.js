@@ -1,6 +1,9 @@
 function getSecondLowestAndGreatest(arr) {
-    arrsort = arr.sort()
-    console.log(arrsort[1], arrsort[arrsort.length - 2])
+    arrsort = arr.sort();
+    let newarr = [];
+    newarr.push(arrsort[1]);
+    newarr.push(arrsort[arrsort.length - 2]);
+    return newarr;
 }
 
-getSecondLowestAndGreatest([1, 2, 3, 4, 5])
+console.log(getSecondLowestAndGreatest([1, 2, 3, 4, 5]))

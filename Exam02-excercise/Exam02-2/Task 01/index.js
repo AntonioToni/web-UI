@@ -15,7 +15,7 @@ function generateNumeronyms(str) {
     }
     newstr = arraynew.toString()
     newstr = newstr.replaceAll(",", " ")
-    console.log(newstr)
+    return(newstr)
 }
 
-generateNumeronyms("Every developer likes to mix kubernetes and javascript")
+console.log(generateNumeronyms("Every developer likes to mix kubernetes and javascript"))
